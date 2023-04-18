@@ -1,0 +1,5 @@
+django==4.2
+django-extensions==3.2.1
+kaggle==1.5.13
+openpyxl==3.1.2 # saving xlsx sheets
+pandas==2.0.0
