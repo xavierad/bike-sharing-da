@@ -1,6 +1,8 @@
 FROM python:3.10.11-slim-bullseye
 
-RUN apt-get update -y && apt install unzip
+RUN apt-get update && \
+    apt-get -y upgrade &&\
+    apt install unzip
 
 WORKDIR /usr/src/app
 
