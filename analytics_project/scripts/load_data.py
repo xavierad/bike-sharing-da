@@ -4,7 +4,7 @@ import pandas as pd
 
 #python manage.py runscript load_data
 def run():
-    data_df = pd.read_csv('../london_merged.csv')
+    data_df = pd.read_csv('../london_merged.csv', engine='pyarrow')
     # next(reader)  # Advance past the header
 
     BikeTrip.objects.all().delete()
